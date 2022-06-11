@@ -1,35 +1,36 @@
-@charset "UTF-8";
+/* 1. Configuration and  abstracts */
+@use "abstracts/variables";
+@use "abstracts/functions";
+@use "abstracts/mixins";
+@use "abstracts/placeholders";
 
-// 1. Configuration and helpers
-@import
-  'abstracts/variables',
-  'abstracts/functions',
-  'abstracts/mixins';
 
-// 2. Vendors
-@import
-  'vendors/normalize';
+/* 2. Vendors */
+@use "vendors/bootstrap";
+@use "vendors/fontawesome";
 
-// 3. Base stuff
-@import
-  'base/base',
-  'base/fonts',
-  'base/typography',
-  'base/helpers';
 
-// 4. Layout-related sections
-@import
-  'layout/header',
-  'layout/footer';
+/* 3. Base stuff */
+@use "base/base";
 
-// 5. Components
-@import
-  'components/button';
 
-// 6. Page-specific styles
-@import
-  'pages/home';
+/* 4. Layout-related sections */
+@use "layout/navigation";
+@use "layout/header";
+@use "layout/footer";
+@use "layout/sidebar";
 
-// 7. Themes
-@import
-  'themes/default';
+
+/* 5. Components */
+@use "components/button";
+@use "components/alert";
+
+
+/* 6. Page-specific styles */
+@use "pages/home";
+// @use "pages/contact";
+
+
+/* 7. Themes */
+@use "themes/default";
+@use "themes/dark";

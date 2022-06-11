@@ -1,0 +1,33 @@
+{
+  "name": "fourth_project_with_bootstrap5_sass",
+  "version": "1.0.0",
+  "description": "My Fourth Practice Project With Bootstrap5 And Sass ",
+  "main": "index.js",
+  "scripts": {
+    "sass": "sass --watch scss:assets/css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/youssefbaba/Fourth_Project_With_Bootstrap5_Sass.git"
+  },
+  "keywords": [
+    "Bootstrap5",
+    "Sass",
+    "Pattern(7-1)",
+    "Pixel-Perfect"
+  ],
+  "author": "youssef baba",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/youssefbaba/Fourth_Project_With_Bootstrap5_Sass/issues"
+  },
+  "homepage": "https://github.com/youssefbaba/Fourth_Project_With_Bootstrap5_Sass#readme",
+  "dependencies": {
+    "@fortawesome/fontawesome-free": "^6.1.1",
+    "autoprefixer": "^10.4.7",
+    "bootstrap": "5.1",
+    "postcss": "^8.4.14",
+    "postcss-cli": "^9.1.0",
+    "sass-rem": "^3.0.0"
+  }
+}
