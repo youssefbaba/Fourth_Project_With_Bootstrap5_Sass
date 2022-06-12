@@ -1,0 +1,16 @@
+$primary-light: #0C61F714;
+$heading-text:#172551;
+$white-lilac : #F6F9FB;
+$medium : #969696;
+
+
+$font-weight-semibold : 600;
+$font-size-regular : 1rem;
+
+
+$colors-text:(primary-light : $primary-light,
+  heading-text:$heading-text,
+  medium : $medium);
+
+$colors-bg:(primary-light : $primary-light,
+  white-lilac : $white-lilac)

@@ -1,0 +1,12 @@
+@use "../abstracts/mixins"as *;
+
+body {
+  font-family: 'Open Sans', sans-serif;
+}
+
+@include gen-text-color;
+@include gen-bg-color;
+
+.fw-smb {
+  font-weight: 600 !important;
+}

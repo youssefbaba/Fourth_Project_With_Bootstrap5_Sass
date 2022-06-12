@@ -1,0 +1,18 @@
+@use "../../node_modules/sass-rem/rem"as *;
+@use "../vendors/bootstrap"as *;
+
+.btn {
+  border-radius: rem(43px);
+
+  @include media-breakpoint-down(lg) {
+    padding: {
+      left: rem(30px) !important;
+      right: rem(30px) !important;
+    }
+  }
+
+  padding: {
+    left: rem(35px) !important;
+    right: rem(35px) !important;
+  }
+}

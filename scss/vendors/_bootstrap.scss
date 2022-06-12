@@ -1,6 +1,24 @@
 /* Here I can Override Bootstrap's values (variables , maps , utilities , ....)*/
 
-$primary :lime;
+
+/* Import Functions */
+@import "../../node_modules/bootstrap/scss/functions";
+
+
+/* Override  primary color */
+$primary : #0C61F7;
+$secondary :#F7931A;
+
+
+/* Import Variables */
+@import "../../node_modules/bootstrap/scss/variables";
+
+
+/* Create your own map */
+$custom-gutters: (6: $spacer * 1.875);
+/* Merge the maps */
+$gutters: map-merge($gutters, $custom-gutters);
+
 
 /* Import Bootstrap */
 @import "../../node_modules/bootstrap/scss/bootstrap.scss";

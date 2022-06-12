@@ -1,0 +1,21 @@
+@use "../../node_modules/sass-rem/rem"as *;
+
+/* Start The Services Section */
+.services {
+  padding: {
+    top: rem(150px);
+  }
+
+  .header-section {
+    &-title {}
+
+    &-sub-title {}
+
+    &-description {
+      max-width: rem(342px);
+    }
+  }
+}
+
+
+/* End The Services Section */

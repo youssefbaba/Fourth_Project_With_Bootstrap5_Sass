@@ -1,0 +1,21 @@
+@use "../abstracts/variables"as *;
+
+@mixin gen-text-color {
+
+  @each $color-name,
+  $color in $colors-text {
+    .text-#{$color-name} {
+      color: $color !important;
+    }
+  }
+}
+
+@mixin gen-bg-color {
+
+  @each $color-name,
+  $color in $colors-bg {
+    .bg-#{$color-name} {
+      background-color: $color;
+    }
+  }
+}

@@ -1,0 +1,28 @@
+@use "../../node_modules/sass-rem/rem"as *;
+@use "../abstracts/variables"as *;
+@use "../vendors/bootstrap"as *;
+
+.header-section {
+  &-title {
+    font: {
+      size: $font-size-regular;
+    }
+
+    letter: {
+      spacing: rem(1px);
+    }
+
+  }
+
+  &-sub-title {
+    font: {
+      family: 'Montserrat', sans-serif;
+      size: rem(40px);
+    }
+
+    letter: {
+      spacing: rem(-0.5px);
+    }
+
+  }
+}

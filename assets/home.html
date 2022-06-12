@@ -6,53 +6,176 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>fourth_project_with_bootstrap5_sass</title>
+  <!-- Google Font Open Sans  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap"
+    rel="stylesheet">
+  <!-- Google Font Montserrat  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&display=swap"
+    rel="stylesheet">
   <!-- Stylesheet Css -->
   <link rel="stylesheet" href="css/home.css">
 </head>
 
 <body>
-  <!-- Just For Test Set Up -->
-  <nav class="navbar navbar-expand-lg navbar-dark">
-    <div class="container-fluid">
-      <a class="navbar-brand" href="#">Navbar</a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
-        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-          <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="#">Home</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Link</a>
-          </li>
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
-              aria-expanded="false">
-              Dropdown
+  <!-- Start The Header Section  -->
+  <header class="header bg-white position-relative">
+    <!-- Start Navigation  -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-white-lilac py-3 fixed-top">
+      <div class="container">
+        <a class="navbar-brand col-lg-2 me-0 p-0" href="#">
+          <img src="media/img/logo.png" alt="logo">
+        </a>
+        <button class="navbar-toggler p-0 shadow-none" type="button" data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+          aria-label="Toggle navigation">
+          <img src="media/img/menu.png" alt="menu">
+        </button>
+        <div class="collapse navbar-collapse flex-grow-1" id="navbarSupportedContent">
+          <ul class="navbar-nav mb-0 col-lg-8 fw-smb">
+            <li class="nav-item">
+              <a class="nav-link py-lg-0 px-lg-4 active" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link py-lg-0 px-lg-4 text-heading-text" href="#services">Services</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link py-lg-0 px-lg-4 text-heading-text" href="#invest">Invest</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link py-lg-0 px-lg-4 text-heading-text" href="#tutorial">Tutorial</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link py-lg-0 px-lg-4 text-heading-text" href="#location">Location</a>
+            </li>
+          </ul>
+          <form class="d-flex justify-content-lg-end align-items-center col-lg-4 fw-smb">
+            <a href="#" class="text-decoration-none text-heading-text me-3 me-lg-5 text-capitalize">Sign in</a>
+            <a class="btn btn-outline-primary  bg-primary-light fw-smb text-capitalize" type="submit">
+              sign up
             </a>
-            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-              <li><a class="dropdown-item" href="#">Action</a></li>
-              <li><a class="dropdown-item" href="#">Another action</a></li>
-              <li>
-                <hr class="dropdown-divider">
-              </li>
-              <li><a class="dropdown-item" href="#">Something else here</a></li>
-            </ul>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link disabled">Disabled</a>
-          </li>
-        </ul>
-        <form class="d-flex">
-          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-          <button class="btn btn-outline-success" type="submit">Search</button>
-        </form>
+          </form>
+        </div>
+      </div>
+    </nav>
+    <!-- End Navigation  -->
+    <!-- Start The Intro Section  -->
+    <section class="intro position-relative overflow-hidden">
+      <div class="container">
+        <div class="row gx-6">
+          <div class="col-lg-6 info">
+            <div class="header-section">
+              <h1 class="header-section-title text-secondary fw-smb text-uppercase">invest to get rich</h1>
+              <h2 class="header-section-sub-title fw-bold text-capitalize text-heading-text">the easiest way to buy and
+                sell cryptocurrency
+              </h2>
+              <p class="header-section-description lh-lg text-medium my-4 mb-lg-5">
+                At Crypto, we are on a mission to accelerate the world's transition to cryptocurrency.
+              </p>
+            </div>
+            <div class="links m-lg-0">
+              <a class="btn btn-primary fw-smb text-capitalize" type="submit">
+                get started
+              </a>
+              <a class="btn btn-outline-primary bg-primary-light fw-smb text-capitalize" type="submit">
+                learn more
+              </a>
+            </div>
+          </div>
+          <div class="col-lg-5 offset-lg-1 image">
+            <img src="media/img/intro.jpg" alt="intro">
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- End The Intro Section  -->
+  </header>
+  <!-- End The Header Section  -->
+  <!-- Start The Services Section  -->
+  <section class="services bg-white" id="services">
+    <div class="container">
+      <div class="header-section text-center border border-primary">
+        <h1 class="header-section-title text-secondary fw-smb text-uppercase mb-0">just for you</h1>
+        <h2 class="header-section-sub-title fw-bold text-capitalize text-heading-text mt-3 mb-4">
+          accesible to anyone
+        </h2>
+        <!-- <p class="header-section-description lh-lg text-medium my-4 mb-lg-5"> -->
+        <p class="header-section-description lh-lg text-medium mx-auto mb-0">
+          While we can customize your plan to suit your needs, most clients schedule regular services:
+        </p>
       </div>
     </div>
-  </nav>
-  <i class="fa-solid fa-4 fa-3x text-primary"></i>
+    <div class="container">
+      <div class="row">
+        <div class="col-4 services-item">
+
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- End The Services Section  -->
+
+
+
+
+
+  <div>
+    <p>Lorem ipsum dolor sit amet.</p>
+    <p>Lorem ipsum dolor sit amet.</p>
+    <p>Lorem ipsum dolor sit amet.</p>
+    <p>Lorem ipsum dolor sit amet.</p>
+    <p>Lorem ipsum dolor sit amet.</p>
+    <p>Lorem ipsum dolor sit amet.</p>
+    <p>Lorem ipsum dolor sit amet.</p>
+    <p>Lorem ipsum dolor sit amet.</p>
+    <p>Lorem ipsum dolor sit amet.</p>
+    <p>Lorem ipsum dolor sit amet.</p>
+    <p>Lorem ipsum dolor sit amet.</p>
+    <p>Lorem ipsum dolor sit amet.</p>
+    <p>Lorem ipsum dolor sit amet.</p>
+    <p>Lorem ipsum dolor sit amet.</p>
+    <p>Lorem ipsum dolor sit amet.</p>
+    <p>Lorem ipsum dolor sit amet.</p>
+    <p>Lorem ipsum dolor sit amet.</p>
+    <p>Lorem ipsum dolor sit amet.</p>
+    <p>Lorem ipsum dolor sit amet.</p>
+    <p>Lorem ipsum dolor sit amet.</p>
+    <p>Lorem ipsum dolor sit amet.</p>
+    <p>Lorem ipsum dolor sit amet.</p>
+    <p>Lorem ipsum dolor sit amet.</p>
+    <p>Lorem ipsum dolor sit amet.</p>
+    <p>Lorem ipsum dolor sit amet.</p>
+    <p>Lorem ipsum dolor sit amet.</p>
+    <p>Lorem ipsum dolor sit amet.</p>
+    <p>Lorem ipsum dolor sit amet.</p>
+    <p>Lorem ipsum dolor sit amet.</p>
+    <p>Lorem ipsum dolor sit amet.</p>
+    <p>Lorem ipsum dolor sit amet.</p>
+    <p>Lorem ipsum dolor sit amet.</p>
+    <p>Lorem ipsum dolor sit amet.</p>
+    <p>Lorem ipsum dolor sit amet.</p>
+    <p>Lorem ipsum dolor sit amet.</p>
+    <p>Lorem ipsum dolor sit amet.</p>
+    <p>Lorem ipsum dolor sit amet.</p>
+    <p>Lorem ipsum dolor sit amet.</p>
+    <p>Lorem ipsum dolor sit amet.</p>
+    <p>Lorem ipsum dolor sit amet.</p>
+    <p>Lorem ipsum dolor sit amet.</p>
+    <p>Lorem ipsum dolor sit amet.</p>
+    <p>Lorem ipsum dolor sit amet.</p>
+    <p>Lorem ipsum dolor sit amet.</p>
+    <p>Lorem ipsum dolor sit amet.</p>
+    <p>Lorem ipsum dolor sit amet.</p>
+    <p>Lorem ipsum dolor sit amet.</p>
+    <p>Lorem ipsum dolor sit amet.</p>
+    <p>Lorem ipsum dolor sit amet.</p>
+    <p>Lorem ipsum dolor sit amet.</p>
+    <p>Lorem ipsum dolor sit amet.</p>
+    <p>Lorem ipsum dolor sit amet.</p>
+  </div>
   <!-- Bootstrap Js  -->
   <script src="js/bootstrap.bundle.min.js"></script>
 </body>
