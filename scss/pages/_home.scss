@@ -1,21 +1,301 @@
 @use "../../node_modules/sass-rem/rem"as *;
+@use "../vendors/bootstrap"as *;
+@use "../abstracts/variables"as *;
+@use "../abstracts/mixins"as *;
 
 /* Start The Services Section */
 .services {
   padding: {
-    top: rem(150px);
+    top: rem(88px);
+  }
+
+  @include media-breakpoint-up(lg) {
+    padding: {
+      top: rem(150px);
+    }
   }
 
   .header-section {
-    &-title {}
-
-    &-sub-title {}
-
     &-description {
       max-width: rem(342px);
+
+      margin: {
+        bottom: 2rem;
+      }
+
+      @include media-breakpoint-up(lg) {
+        margin: {
+          bottom: rem(56px);
+        }
+      }
+    }
+  }
+
+  .carousel {
+    padding: {
+      bottom: rem(66.9614px);
+    }
+
+    &-indicators {
+      button {
+        width: 0.75rem;
+        height: 0.75rem;
+
+        &.active {
+          background: {
+            color: $secondary !important;
+          }
+        }
+      }
+    }
+
+    &-item {
+      @include media-breakpoint-up(lg) {
+        width: calc(100% / 3);
+      }
+
+      /* Using Css */
+      .dollar {
+        width: rem(64px);
+        height: rem(64px);
+
+        &-child {
+          width: rem(26px);
+          height: rem(26px);
+        }
+      }
+
+      @include gen-bg-color-dollar;
+    }
+  }
+
+  &-item {
+    @include media-breakpoint-up(lg) {
+      padding: 2rem !important;
+    }
+
+    .title {
+      font {
+        size: rem(18px);
+      }
+
+      margin: {
+        top: 2rem;
+        bottom: 0.75rem;
+      }
+
+      @include media-breakpoint-up(lg) {
+        font: {
+          weight: $font-weight-semibold;
+          size: rem(20px);
+        }
+      }
+    }
+
+    .description {
+      line: {
+        height: 1.8125;
+      }
     }
   }
 }
 
-
 /* End The Services Section */
+/* Start The Next One Section */
+.next-one {
+  padding: {
+    top: rem(140px);
+  }
+
+  @include media-breakpoint-up(lg) {
+    padding: {
+      top: rem(176px);
+      bottom: rem(26px);
+    }
+  }
+
+  .left-item {
+    &-child {
+      border: {
+        radius: rem(24px);
+      }
+
+      box: {
+        shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+      }
+
+      @include media-breakpoint-up(lg) {
+        padding: {
+          right: rem(20px) !important;
+        }
+      }
+
+      .title {
+        font: {
+          size: rem(9.27px);
+        }
+
+        top: rem(2px);
+
+        @include media-breakpoint-up(lg) {
+          font: {
+            size: rem(14px);
+          }
+        }
+
+        +img {
+          @include media-breakpoint-down(lg) {
+            height: rem(12px);
+            width: rem(12px);
+          }
+        }
+      }
+
+      .price {
+        font: {
+          size: rem(14.57px);
+        }
+
+        margin: {
+          bottom: rem(11px);
+        }
+
+        @include media-breakpoint-up(lg) {
+          font: {
+            size: rem(22px);
+          }
+        }
+      }
+
+      .percentage {
+        font: {
+          size: rem(7.95px);
+        }
+
+        border: {
+          radius: rem(9px);
+        }
+
+        padding: rem(5px) rem(9px);
+
+        @include media-breakpoint-up(lg) {
+          font: {
+            size: rem(12px);
+          }
+
+          padding: {
+            left: rem(14px);
+            right: rem(14px);
+          }
+        }
+
+      }
+
+      img[alt="montains"] {
+        @include media-breakpoint-up(lg) {
+          width: rem(78px);
+          height: rem(63px);
+        }
+      }
+
+      @include gen-bg-color-percentage;
+
+      &.first-specific {
+        margin: {
+          left: calc(calc(calc(calc(100vw - 1.5rem) / 2) + 16px) * -1);
+        }
+
+        @include media-breakpoint-up(sm) {
+          margin: {
+            left: calc(calc(calc(calc(100vw - 1.5rem) / 4) + 16px) * -1);
+          }
+        }
+
+        @include media-breakpoint-up(lg) {
+          margin: {
+            left: calc(calc(calc(936px / 4) + 30px) * -1);
+          }
+        }
+
+        @include media-breakpoint-up(xl) {
+          margin: {
+            left: calc(calc(calc(1114px / 4) + 30px) * -1);
+          }
+        }
+
+        @include media-breakpoint-up(xxl) {
+          margin: {
+            left: calc(calc(calc(1320px / 4) + 30px) * -1);
+          }
+        }
+      }
+
+      &.second-specific {
+        margin: {
+          left: calc(calc(calc(calc(calc(100vw - 1.5rem) / 4) + 30px) * -1) / 2);
+        }
+
+        @include media-breakpoint-up(lg) {
+          margin: {
+            left: calc(calc(calc(calc(936px / 4) + 30px) * -1) / 2);
+          }
+        }
+
+        @include media-breakpoint-up(xl) {
+          margin: {
+            left: calc(calc(calc(calc(1114px / 4) + 30px) * -1) / 2);
+          }
+        }
+
+        @include media-breakpoint-up(xxl) {
+          margin: {
+            left: calc(calc(calc(calc(1320px / 4) + 30px) * -1) / 2);
+          }
+        }
+      }
+    }
+  }
+
+  .right-item {
+    .header-section {
+      &-sub-title {
+        @include media-breakpoint-up(lg) {
+          line: {
+            height: 1.5;
+          }
+        }
+      }
+    }
+
+    .download-calculate {
+      margin: {
+        bottom: rem(40px);
+      }
+
+      @include media-breakpoint-up(lg) {
+        margin: {
+          top: rem(32px) !important;
+        }
+      }
+
+      .image {
+        background: {
+          color: #F1F1F1;
+        }
+
+        width: rem(32px);
+        height: rem(32px);
+      }
+
+      .download {
+        @include media-breakpoint-up(lg) {
+          margin: {
+            right: rem(54px) !important;
+          }
+        }
+      }
+    }
+  }
+}
+
+/* End The Next One Section */

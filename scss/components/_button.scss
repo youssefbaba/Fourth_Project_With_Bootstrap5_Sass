@@ -2,7 +2,9 @@
 @use "../vendors/bootstrap"as *;
 
 .btn {
-  border-radius: rem(43px);
+  border: {
+    radius: rem(43px);
+  }
 
   @include media-breakpoint-down(lg) {
     padding: {

@@ -1,3 +1,4 @@
+@use "../abstracts/variables"as *;
 @use "../abstracts/mixins"as *;
 
 body {
@@ -9,4 +10,14 @@ body {
 
 .fw-smb {
   font-weight: 600 !important;
+}
+
+.center-flex {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.btn-outline-primary {
+  background-color: $primary-light;
 }

@@ -1,5 +1,6 @@
-@use "../vendors/bootstrap"as *;
 @use "../../node_modules/sass-rem/rem"as *;
+@use "../vendors/bootstrap"as *;
+@use "../abstracts/variables"as *;
 
 .navbar {
   .nav-item {

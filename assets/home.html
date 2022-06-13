@@ -23,16 +23,28 @@
 <body>
   <!-- Start The Header Section  -->
   <header class="header bg-white position-relative">
+    <!-- Start Ellipse -->
+    <div class="ellipses">
+      <img src="media/img/header/Ellipse-184.svg" alt="Ellipse-184"
+        class="ellipse-184 position-absolute d-none d-lg-block">
+      <img src="media/img/header/Ellipse-183.svg" alt="Ellipse-183"
+        class="ellipse-183 position-absolute d-none d-lg-block">
+      <img src="media/img/header/Ellipse-182.svg" alt="Ellipse-182"
+        class="ellipse-182 position-absolute d-none d-lg-block">
+      <img src="media/img/header/Ellipse-185.svg" alt="Ellipse-185"
+        class="ellipse-185 position-absolute d-none d-lg-block">
+    </div>
+    <!-- End Ellipse -->
     <!-- Start Navigation  -->
     <nav class="navbar navbar-expand-lg navbar-light bg-white-lilac py-3 fixed-top">
       <div class="container">
         <a class="navbar-brand col-lg-2 me-0 p-0" href="#">
-          <img src="media/img/logo.png" alt="logo">
+          <img src="media/img/header/logo.png" alt="logo">
         </a>
         <button class="navbar-toggler p-0 shadow-none" type="button" data-bs-toggle="collapse"
           data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
           aria-label="Toggle navigation">
-          <img src="media/img/menu.png" alt="menu">
+          <img src="media/img/header/menu.png" alt="menu">
         </button>
         <div class="collapse navbar-collapse flex-grow-1" id="navbarSupportedContent">
           <ul class="navbar-nav mb-0 col-lg-8 fw-smb">
@@ -54,7 +66,7 @@
           </ul>
           <form class="d-flex justify-content-lg-end align-items-center col-lg-4 fw-smb">
             <a href="#" class="text-decoration-none text-heading-text me-3 me-lg-5 text-capitalize">Sign in</a>
-            <a class="btn btn-outline-primary  bg-primary-light fw-smb text-capitalize" type="submit">
+            <a class="btn btn-outline-primary fw-smb text-capitalize" type="submit">
               sign up
             </a>
           </form>
@@ -65,28 +77,29 @@
     <!-- Start The Intro Section  -->
     <section class="intro position-relative overflow-hidden">
       <div class="container">
-        <div class="row gx-6">
+        <div class="row gx-lg-6">
           <div class="col-lg-6 info">
             <div class="header-section">
               <h1 class="header-section-title text-secondary fw-smb text-uppercase">invest to get rich</h1>
-              <h2 class="header-section-sub-title fw-bold text-capitalize text-heading-text">the easiest way to buy and
+              <h2 class="header-section-sub-title fw-bold text-capitalize text-heading-text mb-0">the easiest way to buy
+                and
                 sell cryptocurrency
               </h2>
-              <p class="header-section-description lh-lg text-medium my-4 mb-lg-5">
+              <p class="header-section-description lh-lg text-color-medium my-4 mb-lg-5">
                 At Crypto, we are on a mission to accelerate the world's transition to cryptocurrency.
               </p>
             </div>
-            <div class="links m-lg-0">
+            <div class="links m-lg-0 text-nowrap">
               <a class="btn btn-primary fw-smb text-capitalize" type="submit">
                 get started
               </a>
-              <a class="btn btn-outline-primary bg-primary-light fw-smb text-capitalize" type="submit">
+              <a class="btn btn-outline-primary fw-smb text-capitalize" type="submit">
                 learn more
               </a>
             </div>
           </div>
           <div class="col-lg-5 offset-lg-1 image">
-            <img src="media/img/intro.jpg" alt="intro">
+            <img src="media/img/header/intro.jpg" alt="intro">
           </div>
         </div>
       </div>
@@ -97,30 +110,270 @@
   <!-- Start The Services Section  -->
   <section class="services bg-white" id="services">
     <div class="container">
-      <div class="header-section text-center border border-primary">
+      <div class="header-section text-center">
         <h1 class="header-section-title text-secondary fw-smb text-uppercase mb-0">just for you</h1>
-        <h2 class="header-section-sub-title fw-bold text-capitalize text-heading-text mt-3 mb-4">
+        <h2 class="header-section-sub-title fw-bold text-capitalize text-heading-text mt-2 mb-4 mt-lg-3">
           accesible to anyone
         </h2>
-        <!-- <p class="header-section-description lh-lg text-medium my-4 mb-lg-5"> -->
-        <p class="header-section-description lh-lg text-medium mx-auto mb-0">
+        <p class="header-section-description lh-lg text-color-medium mx-auto">
           While we can customize your plan to suit your needs, most clients schedule regular services:
         </p>
       </div>
     </div>
     <div class="container">
-      <div class="row">
-        <div class="col-4 services-item">
-
+      <div id="carouselIndicatorsOne" class="carousel slide pb-lg-0" data-bs-ride="carousel">
+        <div class="carousel-indicators gap-1 mb-0 d-lg-none">
+          <button type="button" class="rounded-circle bg-color-medium" data-bs-target="#carouselIndicatorsOne"
+            data-bs-slide-to="0" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" class="rounded-circle bg-color-medium" data-bs-target="#carouselIndicatorsOne"
+            data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" class="rounded-circle bg-color-medium active" data-bs-target="#carouselIndicatorsOne"
+            data-bs-slide-to="2" aria-label="Slide 3"></button>
+          <button type="button" class="rounded-circle bg-color-medium" data-bs-target="#carouselIndicatorsOne"
+            data-bs-slide-to="3" aria-label="Slide 4"></button>
+          <button type="button" class="rounded-circle bg-color-medium" data-bs-target="#carouselIndicatorsOne"
+            data-bs-slide-to="4" aria-label="Slide 5"></button>
+          <button type="button" class="rounded-circle bg-color-medium" data-bs-target="#carouselIndicatorsOne"
+            data-bs-slide-to="5" aria-label="Slide 6"></button>
+        </div>
+        <div class="carousel-inner row gx-0 gy-6 gy-lg-0 gx-lg-6">
+          <div class="col-lg-4 carousel-item services-item text-center text-lg-start pt-4 px-2 d-lg-block me-lg-0">
+            <!-- <img src="media/img/services/Litecoin.svg" alt="Litecoin"> -->
+            <span class="center-flex mx-auto mx-lg-0 dollar dollar-litecoin rounded-circle">
+              <span class="dollar-child position-relative rounded-circle border border-2 d-inline-block">
+                <img src="media/img/services/dollar-litecoin.svg" alt="dollar-litecoin"
+                  class="position-absolute top-50 start-50 translate-middle">
+              </span>
+            </span>
+            <h4 class="title text-capitalize fw-bold text-dark mt-lg-4 mb-lg-3">litecoin</h4>
+            <p class="description text-color-medium mb-0">
+              There’s no limit to how creative you can get when working with Twin Oaks, including custom paver stone
+              designs.
+            </p>
+            <a href="#" class="link text-capitalize fw-smb text-primary d-block mt-4">
+              learn more
+              <img src="media/img/services/arrow-right.svg" alt="arrow-right">
+            </a>
+          </div>
+          <div class="col-lg-4 carousel-item services-item text-center text-lg-start pt-4 px-2 d-lg-block me-lg-0">
+            <!-- <img src="media/img/services/Ethereum.svg" alt="Ethereum"> -->
+            <span class="center-flex mx-auto mx-lg-0 dollar dollar-ethereum rounded-circle">
+              <span class="dollar-child position-relative rounded-circle border border-2 d-inline-block">
+                <img src="media/img/services/dollar-ethereum.svg" alt="dollar-ethereum"
+                  class="position-absolute top-50 start-50 translate-middle">
+              </span>
+            </span>
+            <h4 class="title text-capitalize fw-smb text-dark mt-4 mb-3">ethereum</h4>
+            <p class="description text-color-medium mb-0">
+              Our custom walkway creations are perfect for adding style, safety and depth to your home, learn more
+              about.
+            </p>
+            <a href="#" class="link text-capitalize fw-smb text-primary d-block mt-4">
+              learn more
+              <img src="media/img/services/arrow-right.svg" alt="arrow-right">
+            </a>
+          </div>
+          <div
+            class="col-lg-4 carousel-item services-item text-center text-lg-start pt-4 px-2 active d-lg-block me-lg-0">
+            <!-- <img src="media/img/services/Cardano.svg" alt="cardano"> -->
+            <span class="center-flex dollar mx-auto mx-lg-0 dollar-cardano rounded-circle">
+              <span class="dollar-child position-relative rounded-circle border border-2 d-inline-block">
+                <img src="media/img/services/dollar-cardano.svg" alt="dollar-cardano"
+                  class="position-absolute top-50 start-50 translate-middle">
+              </span>
+            </span>
+            <h4 class="title text-capitalize fw-smb text-dark mt-4 mb-3">cardano</h4>
+            <p class="description text-color-medium mb-0">
+              Our team of award winning designers can plan, design and implement custom stone retaining walls to add.
+            </p>
+            <a href="#" class="link text-capitalize fw-smb text-primary d-block mt-4">
+              learn more
+              <img src="media/img/services/arrow-right.svg" alt="arrow-right">
+            </a>
+          </div>
+          <div class="col-lg-4 carousel-item services-item text-center text-lg-start pt-4 px-2 d-lg-block me-lg-0">
+            <!-- <img src="media/img/services/Bitcoin.svg" alt="bitcoin"> -->
+            <span class="center-flex dollar mx-auto mx-lg-0 dollar-bitcoin rounded-circle">
+              <span class="dollar-child position-relative rounded-circle border border-2 d-inline-block">
+                <img src="media/img/services/dollar-bitcoin.svg" alt="dollar-bitcoin"
+                  class="position-absolute top-50 start-50 translate-middle">
+              </span>
+            </span>
+            <h4 class="title text-capitalize fw-smb text-dark mt-4 mb-3">bitcoin</h4>
+            <p class="description text-color-medium mb-0">
+              Looking to take your culinary experience under the stars? We’re renowned throughout Rochester.
+            </p>
+            <a href="#" class="link text-capitalize fw-smb text-primary d-block mt-4">
+              learn more
+              <img src="media/img/services/arrow-right.svg" alt="arrow-right">
+            </a>
+          </div>
+          <div class="col-lg-4 carousel-item services-item text-center text-lg-start pt-4 px-2 d-lg-block me-lg-0">
+            <!-- <img src="media/img/services/Stellar.svg" alt="stellar"> -->
+            <span class="center-flex dollar mx-auto mx-lg-0 dollar-stellar rounded-circle">
+              <span class="dollar-child position-relative rounded-circle border border-2 d-inline-block">
+                <img src="media/img/services/dollar-stellar.svg" alt="dollar-stellar"
+                  class="position-absolute top-50 start-50 translate-middle">
+              </span>
+            </span>
+            <h4 class="title text-capitalize fw-smb text-dark mt-4 mb-3">stellar</h4>
+            <p class="description text-color-medium mb-0">
+              Add new levels of ambiance to your patio experience with a custom outdoor fireplace design from Twin.
+            </p>
+            <a href="#" class="link text-capitalize fw-smb text-primary d-block mt-4">
+              learn more
+              <img src="media/img/services/arrow-right.svg" alt="arrow-right">
+            </a>
+          </div>
+          <div class="col-lg-4 carousel-item services-item text-center text-lg-start pt-4 px-2 d-lg-block me-lg-0">
+            <!-- <img src="media/img/services/Dogecoin.svg" alt="dogecoin"> -->
+            <span class="center-flex dollar mx-auto mx-lg-0 dollar-dogecoin rounded-circle">
+              <span class="dollar-child position-relative rounded-circle border border-2 d-inline-block">
+                <img src="media/img/services/dollar-dogecoin.svg" alt="dollar-dogecoin"
+                  class="position-absolute top-50 start-50 translate-middle">
+              </span>
+            </span>
+            <h4 class="title text-capitalize fw-smb text-dark mt-4 mb-3">dogecoin</h4>
+            <p class="description text-color-medium mb-0">
+              Add new levels of ambiance to your patio experience with a custom outdoor fireplace design from Twin.
+            </p>
+            <a href="#" class="link text-capitalize fw-smb text-primary d-block mt-4">
+              learn more
+              <img src="media/img/services/arrow-right.svg" alt="arrow-right">
+            </a>
+          </div>
         </div>
       </div>
     </div>
   </section>
   <!-- End The Services Section  -->
+  <!-- Start The Next One Section -->
+  <section class="next-one">
+    <div class="container">
+      <div class="row g-0">
+        <div class="col-lg-6 left-item">
+          <div class="row flex-nowrap g-0">
+            <div class="col-6 left-item-child bg-white p-3 py-lg-4 ps-lg-4 first-specific">
+              <div class="d-flex align-items-center mb-2 mb-lg-1">
+                <h4 class="title fw-bold text-dark text-capitalize mb-0 me-1 position-relative">windcoin</h4>
+                <img src="media/img/next-one/bike.svg" alt="bike">
+              </div>
+              <div class="d-flex">
+                <div class="col-7">
+                  <strong class="price d-block text-dark mb-lg-3">$55,544.95</strong>
+                  <span class="percentage percentage-bike d-inline-block text-danger fw-smb py-lg-2">2.5%</span>
+                </div>
+                <div class="col-5 d-flex justify-content-end">
+                  <img src="media/img/next-one/montains.svg" alt="montains" class="mt-lg-auto mt-xl-0">
+                </div>
+              </div>
+            </div>
+            <div class="col-6 left-item-child bg-white p-3 py-lg-4 ps-lg-4 ms-3 ms-lg-6">
+              <div class="d-flex align-items-center mb-2 mb-lg-1">
+                <h4 class="title fw-bold text-dark text-capitalize mb-0 me-1 position-relative">windcoin</h4>
+                <img src="media/img/next-one/spiral.svg" alt="spiral">
+              </div>
+              <div class="d-flex">
+                <div class="col-7">
+                  <strong class="price d-block text-dark mb-lg-3">$55,544.95</strong>
+                  <span class="percentage percentage-spiral d-inline-block text-secondary fw-smb py-lg-2 ">2.5%</span>
+                </div>
+                <div class="col-5 d-flex justify-content-end">
+                  <img src="media/img/next-one/montains.svg" alt="montains" class="mt-lg-auto mt-xl-0">
+                </div>
+              </div>
+            </div>
+            <div class="col-6 left-item-child bg-white p-3 py-lg-4 ps-lg-4 ms-3 ms-lg-6">
+              <div class="d-flex align-items-center mb-2 mb-lg-1">
+                <h4 class="title fw-bold text-dark text-capitalize mb-0 me-1 position-relative">skatecoin</h4>
+                <img src="media/img/next-one/car.svg" alt="car">
+              </div>
+              <div class="d-flex">
+                <div class="col-7">
+                  <strong class="price d-block text-dark mb-lg-3">$55,544.95</strong>
+                  <span class="percentage percentage-car d-inline-block text-hot-green fw-smb py-lg-2 ">2.5%</span>
+                </div>
+                <div class="col-5 d-flex justify-content-end align-items-center">
+                  <img src="media/img/next-one/montains.svg" alt="montains" class="mt-lg-auto mt-xl-0">
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row g-0 mt-3 mt-lg-6">
+            <div class="col-6 left-item-child bg-white p-3 py-lg-4 ps-lg-4 second-specific">
+              <div class="d-flex align-items-center mb-2 mb-lg-1">
+                <h4 class="title fw-bold text-dark text-capitalize mb-0 me-1 position-relative">shiop</h4>
+                <img src="media/img/next-one/shiop.svg" alt="shiop">
+              </div>
+              <div class="d-flex">
+                <div class="col-7">
+                  <strong class="price d-block text-dark mb-lg-3">$55,544.95</strong>
+                  <span class="percentage percentage-shiop d-inline-block text-hot-green fw-smb py-lg-2 ">2.5%</span>
+                </div>
+                <div class="col-5 d-flex justify-content-end align-items-center">
+                  <img src="media/img/next-one/montains.svg" alt="montains" class="mt-lg-auto mt-xl-0">
+                </div>
+              </div>
+            </div>
+            <div class="col-6 left-item-child p-3 py-lg-4 ps-lg-4 ms-3 ms-lg-6">
+              <div class="d-flex align-items-center mb-2 mb-lg-1">
+                <h4 class="title fw-bold text-dark text-capitalize mb-0 me-1 position-relative">trainee</h4>
+                <img src="media/img/next-one/trainee.svg" alt="trainee">
+              </div>
+              <div class="d-flex">
+                <div class="col-7">
+                  <strong class="price d-block text-dark mb-lg-3">$55,544.95</strong>
+                  <span class="percentage percentage-trainee  d-inline-block text-secondary fw-smb py-lg-2">2.5%</span>
+                </div>
+                <div class="col-5 d-flex justify-content-end">
+                  <img src="media/img/next-one/montains.svg" alt="montains" class="mt-lg-auto mt-xl-0">
+                </div>
+              </div>
+            </div>
+          </div>
 
 
 
-
+        </div>
+        <div class="col-lg-5 offset-lg-1 right-item mt-5 mt-lg-0">
+          <div class="header-section">
+            <h1 class="header-section-title text-secondary fw-smb text-uppercase mb-0">what’s next?</h1>
+            <h2 class="header-section-sub-title fw-bold text-capitalize text-heading-text mb-4 mt-lg-3">
+              Securely Buy, Sell Store, Send And Track
+            </h2>
+            <p class="header-section-description lh-lg text-color-medium">
+              Buy and sell 100+ cryptocurrencies with 20+ fiat currencies using bank transfers or your credit/debit
+              card. Enjoy up to 8% back on all spending with your sleek, pure metal card.
+              You Plant is available by appointment on Saturdays at New Garden Gazebo. Now available online For more
+              details about.
+            </p>
+          </div>
+          <div class="d-flex download-calculate mt-4 mb-lg-5">
+            <div class="download d-flex align-items-center me-4">
+              <span class="image position-relative rounded-circle">
+                <img src="media/img/next-one/download.svg" alt="download"
+                  class="me-3 position-absolute top-50 start-50 translate-middle">
+              </span>
+              <span class="fw-smb text-capitalize text-dark">download pdf</span>
+            </div>
+            <div class="calculate d-flex align-items-center">
+              <span class="image position-relative rounded-circle">
+                <img src="media/img/next-one/calculate.svg" alt="calculate"
+                  class="me-3 position-absolute top-50 start-50 translate-middle">
+              </span>
+              <span class="fw-smb text-capitalize text-dark">calculate coin</span>
+            </div>
+          </div>
+          <div>
+            <a class="btn btn-outline-primary fw-smb text-capitalize" type="submit">
+              learn more
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- End The Next One Section -->
 
   <div>
     <p>Lorem ipsum dolor sit amet.</p>
@@ -178,6 +431,7 @@
   </div>
   <!-- Bootstrap Js  -->
   <script src="js/bootstrap.bundle.min.js"></script>
+  <script src="js/main.js"></script>
 </body>
 
 </html>

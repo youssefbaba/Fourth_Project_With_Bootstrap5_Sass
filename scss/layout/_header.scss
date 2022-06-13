@@ -3,6 +3,26 @@
 @use "../vendors/bootstrap"as *;
 
 .header {
+  .ellipse-184 {
+    top: 493px;
+    left: 744px;
+  }
+
+  .ellipse-183 {
+    top: 554px;
+    left: 706px;
+  }
+
+  .ellipse-182 {
+    top: 563px;
+    left: 637px;
+  }
+
+  .ellipse-185 {
+    top: 620px;
+    left: 607px;
+  }
+
   &::before {
     content: "";
     height: 100%;

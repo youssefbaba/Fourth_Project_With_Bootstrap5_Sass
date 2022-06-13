@@ -15,7 +15,39 @@
   @each $color-name,
   $color in $colors-bg {
     .bg-#{$color-name} {
-      background-color: $color;
+      background: {
+        color: $color !important;
+      }
+    }
+  }
+}
+
+@mixin gen-bg-color-dollar {
+
+  @each $name,
+  $color in $colors-dollar {
+    .#{$name} {
+      background: {
+        color: rgba($color, 0.08);
+      }
+
+      .dollar-child {
+        border: {
+          color: $color !important;
+        }
+      }
+    }
+  }
+}
+
+@mixin gen-bg-color-percentage {
+
+  @each $name,
+  $color in $colors-percentage {
+    .#{$name} {
+      background: {
+        color: rgba($color, 0.14);
+      }
     }
   }
 }

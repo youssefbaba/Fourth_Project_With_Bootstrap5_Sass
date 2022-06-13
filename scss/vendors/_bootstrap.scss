@@ -1,23 +1,78 @@
 /* Here I can Override Bootstrap's values (variables , maps , utilities , ....)*/
 
-
 /* Import Functions */
 @import "../../node_modules/bootstrap/scss/functions";
-
 
 /* Override  primary color */
 $primary : #0C61F7;
 $secondary :#F7931A;
+$danger :#E13961;
+
 
 
 /* Import Variables */
 @import "../../node_modules/bootstrap/scss/variables";
+@import "../../node_modules/bootstrap/scss/utilities";
+
+
+/* Enable responsive fro position  */
+$utilities: map-merge($utilities, ("position": map-merge(map-get($utilities, "position"),
+      (responsive: true),
+    ),
+  ));
+
+
+/* Modify utilitie gap */
+$utilities: map-merge($utilities,
+  ("gap": map-merge(map-get($utilities, "gap"),
+      (values: map-merge(map-get(map-get($utilities, "gap"), "values"),
+          (6: $spacer * 1.875),
+        ),
+      ),
+    ),
+  ));
+
+
+/* Modify utilitie margin-start  */
+$utilities: map-merge($utilities,
+  ("margin-start": map-merge(map-get($utilities, "margin-start"),
+      (values: map-merge(map-get(map-get($utilities, "margin-start"), "values"),
+          (6: $spacer * 1.875),
+        ),
+      ),
+    ),
+  ));
+
+
+/* Modify utilitie margin-end  */
+$utilities: map-merge($utilities,
+  ("margin-end": map-merge(map-get($utilities, "margin-end"),
+      (values: map-merge(map-get(map-get($utilities, "margin-end"), "values"),
+          (6: $spacer * 1.875),
+        ),
+      ),
+    ),
+  ));
+
+
+/* Modify utilitie margin-top  */
+$utilities: map-merge($utilities,
+  ("margin-top": map-merge(map-get($utilities, "margin-top"),
+      (values: map-merge(map-get(map-get($utilities, "margin-top"), "values"),
+          (6: $spacer * 1.875),
+        ),
+      ),
+    ),
+  ));
+
 
 
 /* Create your own map */
 $custom-gutters: (6: $spacer * 1.875);
 /* Merge the maps */
 $gutters: map-merge($gutters, $custom-gutters);
+
+
 
 
 /* Import Bootstrap */

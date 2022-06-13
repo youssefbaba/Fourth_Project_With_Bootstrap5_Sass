@@ -11,13 +11,26 @@
     letter: {
       spacing: rem(1px);
     }
-
   }
 
   &-sub-title {
     font: {
       family: 'Montserrat', sans-serif;
-      size: rem(40px);
+      size: rem(32px);
+    }
+
+    line: {
+      height: 1.75;
+    }
+
+    @include media-breakpoint-up(lg) {
+      font: {
+        size: rem(40px);
+      }
+
+      line: {
+        height: 1.2;
+      }
     }
 
     letter: {

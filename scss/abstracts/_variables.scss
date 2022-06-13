@@ -1,7 +1,14 @@
+@use "../vendors/bootstrap"as *;
+
+
 $primary-light: #0C61F714;
 $heading-text:#172551;
 $white-lilac : #F6F9FB;
-$medium : #969696;
+$color-medium : #969696;
+$topaz: #27BBAD;
+$macaw-blue-green: #47BDDD;
+$shamrock-green: #059C55;
+$hot-green : #31FF2D;
 
 
 $font-weight-semibold : 600;
@@ -10,7 +17,24 @@ $font-size-regular : 1rem;
 
 $colors-text:(primary-light : $primary-light,
   heading-text:$heading-text,
-  medium : $medium);
+  color-medium : $color-medium,
+  hot-green :$hot-green, );
 
 $colors-bg:(primary-light : $primary-light,
-  white-lilac : $white-lilac)
+  white-lilac : $white-lilac,
+  color-medium : $color-medium, );
+
+$colors-dollar :(dollar-litecoin: $topaz,
+  dollar-ethereum: $primary,
+  dollar-cardano: $secondary,
+  dollar-bitcoin: $macaw-blue-green,
+  dollar-stellar: $shamrock-green,
+  dollar-dogecoin: $danger,
+);
+
+$colors-percentage:(percentage-bike: $danger,
+  percentage-spiral: $secondary,
+  percentage-car: $hot-green,
+  percentage-shiop: $hot-green,
+  percentage-trainee: $secondary,
+);
