@@ -51,3 +51,7 @@
     }
   }
 }
+
+@mixin transition-mixin($values...) {
+  transition: $values;
+}

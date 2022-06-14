@@ -1,5 +1,6 @@
 @use "../../node_modules/sass-rem/rem"as *;
 @use "../vendors/bootstrap"as *;
+@use "../abstracts/variables"as *;
 
 .btn {
   border: {
@@ -17,4 +18,8 @@
     left: rem(35px) !important;
     right: rem(35px) !important;
   }
+}
+
+.btn-primary-dark {
+  @include button-variant($primary-dark, $primary-dark)
 }

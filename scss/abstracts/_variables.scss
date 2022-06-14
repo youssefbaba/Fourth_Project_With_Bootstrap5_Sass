@@ -5,10 +5,12 @@ $primary-light: #0C61F714;
 $heading-text:#172551;
 $white-lilac : #F6F9FB;
 $color-medium : #969696;
+$color-medium-dark : #646464;
 $topaz: #27BBAD;
 $macaw-blue-green: #47BDDD;
 $shamrock-green: #059C55;
 $hot-green : #31FF2D;
+$primary-dark:#3346D3;
 
 
 $font-weight-semibold : 600;
@@ -18,11 +20,12 @@ $font-size-regular : 1rem;
 $colors-text:(primary-light : $primary-light,
   heading-text:$heading-text,
   color-medium : $color-medium,
-  hot-green :$hot-green, );
+  hot-green :$hot-green,
+  color-medium-dark : $color-medium-dark);
 
 $colors-bg:(primary-light : $primary-light,
   white-lilac : $white-lilac,
-  color-medium : $color-medium, );
+  color-medium : $color-medium, primary-dark:$primary-dark);
 
 $colors-dollar :(dollar-litecoin: $topaz,
   dollar-ethereum: $primary,

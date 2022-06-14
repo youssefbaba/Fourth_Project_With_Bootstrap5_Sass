@@ -2,6 +2,7 @@
 @use "../vendors/bootstrap"as *;
 @use "../abstracts/variables"as *;
 @use "../abstracts/mixins"as *;
+@use "sass:math"as *;
 
 /* Start The Services Section */
 .services {
@@ -34,19 +35,6 @@
   .carousel {
     padding: {
       bottom: rem(66.9614px);
-    }
-
-    &-indicators {
-      button {
-        width: 0.75rem;
-        height: 0.75rem;
-
-        &.active {
-          background: {
-            color: $secondary !important;
-          }
-        }
-      }
     }
 
     &-item {
@@ -103,6 +91,10 @@
 /* End The Services Section */
 /* Start The Next One Section */
 .next-one {
+  overflow: {
+    x: hidden;
+  }
+
   padding: {
     top: rem(140px);
   }
@@ -110,7 +102,7 @@
   @include media-breakpoint-up(lg) {
     padding: {
       top: rem(176px);
-      bottom: rem(26px);
+      bottom: 1.25rem;
     }
   }
 
@@ -202,54 +194,54 @@
 
       &.first-specific {
         margin: {
-          left: calc(calc(calc(calc(100vw - 1.5rem) / 2) + 16px) * -1);
+          left: calc(calc(calc(calc(100vw - 1.5rem) / 3) + 0.75rem) * -1);
         }
 
         @include media-breakpoint-up(sm) {
           margin: {
-            left: calc(calc(calc(calc(100vw - 1.5rem) / 4) + 16px) * -1);
+            left: calc(calc(calc(calc(540px - 1.5rem) / 3) + 0.75rem) * -1);
           }
         }
 
         @include media-breakpoint-up(lg) {
           margin: {
-            left: calc(calc(calc(936px / 4) + 30px) * -1);
+            left: calc(calc(calc(calc(936px - 1.5rem) / 4) + 0.75rem) * -1);
           }
         }
 
         @include media-breakpoint-up(xl) {
           margin: {
-            left: calc(calc(calc(1114px / 4) + 30px) * -1);
+            left: calc(calc(calc(calc(1114px - 1.5rem) / 4) + 0.75rem) * -1);
           }
         }
 
         @include media-breakpoint-up(xxl) {
           margin: {
-            left: calc(calc(calc(1320px / 4) + 30px) * -1);
+            left: calc(calc(calc(calc(1320px - 1.5rem) / 4) + 0.75rem) * -1);
           }
         }
       }
 
       &.second-specific {
         margin: {
-          left: calc(calc(calc(calc(calc(100vw - 1.5rem) / 4) + 30px) * -1) / 2);
+          left: -1rem;
         }
 
         @include media-breakpoint-up(lg) {
           margin: {
-            left: calc(calc(calc(calc(936px / 4) + 30px) * -1) / 2);
+            left: calc(calc(calc(calc(936px - 1.5rem) / 8) + 0.75rem) * -1);
           }
         }
 
         @include media-breakpoint-up(xl) {
           margin: {
-            left: calc(calc(calc(calc(1114px / 4) + 30px) * -1) / 2);
+            left: calc(calc(calc(calc(1114px - 1.5rem) / 8) + 0.75rem) * -1);
           }
         }
 
         @include media-breakpoint-up(xxl) {
           margin: {
-            left: calc(calc(calc(calc(1320px / 4) + 30px) * -1) / 2);
+            left: calc(calc(calc(calc(1320px - 1.5rem) / 8) + 0.75rem) * -1);
           }
         }
       }
@@ -257,6 +249,10 @@
   }
 
   .right-item {
+    margin: {
+      top: rem(120px);
+    }
+
     .header-section {
       &-sub-title {
         @include media-breakpoint-up(lg) {
@@ -299,3 +295,754 @@
 }
 
 /* End The Next One Section */
+/* Start The Section Next Two */
+.next-two {
+  overflow: {
+    x: hidden;
+  }
+
+  padding: {
+    top: rem(140px);
+  }
+
+  @include media-breakpoint-up(lg) {
+    padding: {
+      top: rem(176px);
+      bottom: 1.25rem;
+    }
+  }
+
+  .left-item {
+    margin: {
+      top: rem(106px);
+    }
+
+    .header-section {
+      &-sub-title {
+        @include media-breakpoint-up(lg) {
+          line: {
+            height: 1.5;
+          }
+        }
+      }
+    }
+
+    .download-calculate {
+      margin: {
+        bottom: rem(40px);
+      }
+
+      @include media-breakpoint-up(lg) {
+        margin: {
+          top: rem(32px) !important;
+        }
+      }
+
+      .image {
+        background: {
+          color: #F1F1F1;
+        }
+
+        width: rem(32px);
+        height: rem(32px);
+      }
+
+      .download {
+        @include media-breakpoint-up(lg) {
+          margin: {
+            right: rem(54px) !important;
+          }
+        }
+      }
+    }
+  }
+
+  .right-item {
+    &-child {
+      border: {
+        radius: rem(24px);
+      }
+
+      box: {
+        shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+      }
+
+      @include media-breakpoint-up(lg) {
+        padding: {
+          right: rem(20px) !important;
+        }
+      }
+
+      .title {
+        font: {
+          size: rem(14.57px);
+        }
+
+        @include media-breakpoint-up(lg) {
+          font: {
+            size: rem(22px);
+          }
+        }
+
+        +img {
+          @include media-breakpoint-down(lg) {
+            height: rem(15px);
+            width: rem(15px);
+          }
+        }
+      }
+
+      .description {
+        margin: {
+          top: rem(6px);
+        }
+
+        font: {
+          size: rem(9.27px);
+        }
+
+        @include media-breakpoint-up(lg) {
+          font: {
+            size: rem(14px);
+          }
+        }
+      }
+
+      &.first-specific {
+        margin: {
+          left: calc(calc(calc(calc(100vw - 1.5rem) / 3) + 0.75rem) * -1);
+        }
+
+        @include media-breakpoint-up(sm) {
+          margin: {
+            left: calc(calc(calc(calc(540px - 1.5rem) / 3) + 0.75rem) * -1);
+          }
+        }
+
+        @include media-breakpoint-up(lg) {
+          margin: {
+            left: calc(calc((936px - 1.5rem) / 8 - 30px) * -1);
+          }
+        }
+
+        @include media-breakpoint-up(xl) {
+          margin: {
+            left: calc(calc((1114px - 1.5rem) / 8 - 30px) * -1);
+          }
+        }
+
+        @include media-breakpoint-up(xxl) {
+          margin: {
+            left: calc(calc((1320px - 1.5rem) / 8 - 30px) * -1);
+          }
+        }
+      }
+
+      &.second-specific {
+        @include media-breakpoint-up(lg) {
+          margin: {
+            left: calc((936px - 1.5rem) / 8 - 30px);
+          }
+        }
+
+        @include media-breakpoint-up(xl) {
+          margin: {
+            left: calc((1114px - 1.5rem) / 8 - 30px);
+          }
+        }
+
+        @include media-breakpoint-up(xxl) {
+          margin: {
+            left: calc((1320px - 1.5rem) / 8 - 30px);
+          }
+        }
+      }
+    }
+  }
+
+
+}
+
+/* End The Section Next Two */
+/* Start The Pricing Section  */
+.pricing {
+  padding: {
+    top: rem(88px);
+  }
+
+  @include media-breakpoint-up(lg) {
+    padding: {
+      top: rem(150px);
+    }
+  }
+
+  .header-section {
+    &-description {
+      max-width: rem(342px);
+
+      @include media-breakpoint-up(lg) {
+        margin: {
+          bottom: rem(58px) !important;
+        }
+      }
+    }
+  }
+
+  .header-pricing {
+    max-width: rem(274px);
+
+    margin: {
+      bottom: rem(32px);
+    }
+
+    .save {
+      font: {
+        size: rem(14px);
+      }
+
+      padding: {
+        top: rem(4px);
+        right: rem(8px);
+        bottom: rem(7px);
+        left: rem(4px)
+      }
+
+      border: {
+        radius: rem(34px);
+      }
+
+      &:before {
+        content: "";
+        position: absolute;
+        border: 5px solid;
+        border-color: $secondary transparent transparent transparent;
+        top: calc(100% - 1px);
+        left: 10px;
+
+      }
+    }
+
+    .period {
+
+      .switch {
+        width: rem(68px);
+        height: rem(36px);
+
+        .slider {
+          cursor: pointer;
+
+          background: {
+            color: #F5F9F9;
+          }
+
+          border: {
+            radius: rem(28px);
+          }
+        }
+
+        .circle {
+          cursor: pointer;
+          height: rem(24px);
+          width: rem(24px);
+          left: rem(6px);
+          bottom: rem(6px);
+          z-index: 2;
+          @include transition-mixin(all 0.4s ease);
+
+          &::before {
+            content: "";
+            position: absolute;
+            width: 3px;
+            height: 60%;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background-color: $white;
+          }
+        }
+
+        input[type="checkbox"] {
+          &:checked {
+            +.circle {
+              transform: translateX(rem(32px));
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .carousel {
+
+    &-item {
+      padding: {
+        bottom: rem(72px);
+      }
+
+      @include media-breakpoint-up(lg) {
+        padding: {
+          top: rem(32px) !important;
+          right: rem(32px) !important;
+          left: rem(32px) !important;
+          bottom: rem(182px) !important;
+        }
+      }
+
+      @include media-breakpoint-up(lg) {
+        width: calc(100% / 3) !important;
+      }
+    }
+
+    .price {
+      span {
+        &:first-child {
+          font: {
+            size: rem(40px);
+          }
+
+          @include media-breakpoint-up(lg) {
+            font: {
+              size: rem(48px);
+            }
+          }
+        }
+      }
+
+      span {
+        &:last-child {
+          top: 4px;
+
+          font: {
+            size: rem(14px);
+          }
+
+          @include media-breakpoint-up(lg) {
+            font: {
+              size: 1rem;
+            }
+          }
+        }
+      }
+    }
+
+    .shiping {
+
+      @include media-breakpoint-up(lg) {
+        margin: {
+          top: 0.75rem !important;
+          bottom: 0.75rem !important;
+        }
+      }
+
+      .title {
+        font: {
+          size: rem(24px);
+        }
+
+        @include media-breakpoint-up(lg) {
+          font: {
+            size: rem(32px);
+          }
+        }
+      }
+
+      .image {
+        top: rem(-3px);
+
+        @include media-breakpoint-up(lg) {
+          width: rem(32px);
+          height: rem(32px);
+        }
+      }
+
+      .description {
+        line: {
+          height: 1.7;
+        }
+
+        font: {
+          size: rem(14px);
+        }
+
+        @include media-breakpoint-up(lg) {
+          font: {
+            size: 1rem;
+          }
+        }
+      }
+    }
+
+    .advantages {
+      @include media-breakpoint-up(lg) {
+        margin: {
+          bottom: rem(32px) !important;
+        }
+      }
+
+      &-item {
+        span {
+          &:first-child {
+            width: 1rem;
+            height: 1rem;
+
+            @include media-breakpoint-up(lg) {
+              width: rem(18px);
+              height: rem(18px);
+            }
+
+            &::before {
+              content: "";
+              position: absolute;
+              left: 50%;
+              top: 50%;
+              width: rem(5px);
+              height: rem(8px);
+
+              @include media-breakpoint-up(lg) {
+                width: rem(6px);
+                height: rem(12px);
+              }
+
+              border: solid white;
+
+              border: {
+                width: 0 rem(3px) rem(3px) 0;
+              }
+
+              transform: translate(-50%, -50%) rotate(45deg);
+            }
+          }
+        }
+
+        span {
+          &:last-child {
+            font: {
+              size: rem(14px);
+            }
+
+            @include media-breakpoint-up(lg) {
+              font: {
+                size: 1rem;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+/* End The Pricing Section  */
+/* Start The Testimonials Section */
+.testimonial {
+  padding: {
+    top: rem(116px);
+    bottom: rem(88px);
+  }
+
+  @include media-breakpoint-up(lg) {
+    padding: {
+      top: 0;
+      bottom: rem(150px);
+    }
+  }
+
+  .header-section {
+    &-description {
+      max-width: rem(344px);
+
+      margin: {
+        bottom: rem(40px);
+      }
+    }
+  }
+
+  .carousel {
+    &-item {
+      padding: {
+        bottom: rem(52px);
+      }
+
+      @include media-breakpoint-up(lg) {
+        padding: {
+          bottom: rem(79px);
+          top: rem(56px);
+        }
+      }
+
+      >div {
+        @include media-breakpoint-down(lg) {
+          display: none
+        }
+
+        &:first-child {
+          @include media-breakpoint-down(lg) {
+            display: block
+          }
+        }
+      }
+
+      &.active,
+      &-next,
+      &-prev {
+        display: flex
+      }
+
+      &-end.active,
+      &-next {
+        @include media-breakpoint-up(lg) {
+          transform: translateX(33.33%);
+        }
+      }
+
+      &-start.active,
+      &-prev {
+        @include media-breakpoint-up(lg) {
+          transform: translateX(-33.33%);
+        }
+      }
+
+      &-end,
+      &-start {
+        transform: translateX(0)
+      }
+    }
+
+    .previous,
+    .next {
+      width: rem(50px);
+      height: rem(50px);
+      @include transition-mixin(all 0.15s ease-in-out);
+
+      &:hover {
+        background-color: $primary !important;
+      }
+    }
+
+    .previous {
+      right: rem(71px);
+    }
+
+    .next {}
+
+    .comment {
+      margin: {
+        bottom: rem(32px);
+      }
+
+      blockquote {
+        line: {
+          height: 1.8125;
+        }
+      }
+    }
+
+    .image {
+      img {
+        width: rem(56px);
+        height: rem(56px);
+
+        @include media-breakpoint-up(lg) {
+          width: rem(64px);
+          height: rem(64px);
+        }
+      }
+    }
+
+    .stars,
+    .info {
+      span {
+        font: {
+          size: rem(14px);
+        }
+      }
+    }
+
+    .info {
+      span {
+        @include media-breakpoint-up(lg) {
+          font: {
+            size: rem(16px);
+          }
+        }
+      }
+    }
+
+  }
+}
+
+/* End The Testimonials Section */
+/* Start The Contact Section */
+.contact {
+  padding: {
+    top: rem(88px);
+    bottom: rem(88px);
+  }
+
+  @include media-breakpoint-up(lg) {
+    padding: {
+      top: rem(120px);
+      bottom: rem(120px);
+    }
+  }
+
+  .header-section {
+    &-description {
+      max-width: rem(592px);
+
+      margin: {
+        bottom: rem(32px);
+      }
+
+      @include media-breakpoint-up(lg) {
+        margin: {
+          bottom: rem(40px);
+        }
+      }
+    }
+  }
+
+  .form {
+    max-width: rem(483px);
+
+    input[type="email"] {
+      padding: {
+        top: rem(22px);
+        bottom: rem(22px);
+      }
+
+      @include media-breakpoint-up(lg) {
+        padding: {
+          top: rem(25px);
+          bottom: rem(25px);
+          left: rem(64px) !important;
+          right: rem(64px) !important;
+        }
+      }
+
+      &::placeholder {
+        color: $color-medium;
+      }
+    }
+
+    .subscribe,
+    .send {
+      right: rem(8px);
+    }
+
+    .send {
+      width: rem(50px);
+      height: rem(50px);
+    }
+
+    .email {
+      left: rem(24px);
+    }
+  }
+
+}
+
+/* End The Contact Section */
+/* Start The Footer Section */
+.footer {
+  padding: {
+    top: rem(72px);
+  }
+
+  @include media-breakpoint-up(lg) {
+    top: rem(56px);
+    bottom: rem(56px);
+  }
+
+  .logo-media {
+    .description {
+      margin: {
+        bottom: rem(32px);
+      }
+
+      line: {
+        height: 1.8;
+      }
+
+      @include media-breakpoint-up(lg) {
+        line: {
+          height: 2;
+        }
+      }
+    }
+
+    .media {
+      margin: {
+        top: rem(40px);
+        bottom: rem(40px);
+      }
+
+      @include media-breakpoint-up(lg) {
+        margin: 0;
+      }
+
+      li {
+        &:not(:last-child) {
+          margin: {
+            right: rem(22px);
+          }
+        }
+
+        a {
+          width: rem(32px);
+          height: rem(32px);
+          @include transition-mixin(all 0.15s ease-in-out);
+
+          &:hover {
+            background-color: $primary !important;
+          }
+        }
+      }
+    }
+  }
+
+  .links,
+  .about,
+  .our-office {
+    .title {
+      font: {
+        size: 1rem;
+      }
+    }
+  }
+
+  .our-office {
+    margin: {
+      top: rem(40px);
+    }
+
+    >div {
+      font: {
+        size: rem(14px);
+      }
+
+      line: {
+        height: 1.8;
+      }
+
+      &:last-child {
+        margin: {
+          top: rem(24px);
+          bottom: rem(40px)
+        }
+      }
+    }
+  }
+
+  .copyright {
+    p {
+      @include media-breakpoint-up(lg) {
+        margin: {
+          top: rem(52px);
+        }
+      }
+    }
+  }
+}
+
+/* End The Footer Section */

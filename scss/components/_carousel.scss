@@ -1,0 +1,15 @@
+@use "../vendors/bootstrap"as *;
+
+.carousel {
+  &-indicators [data-bs-target] {
+    width: 0.75rem;
+    height: 0.75rem;
+
+    &.active {
+      background: {
+        color: $secondary !important;
+      }
+
+    }
+  }
+}
