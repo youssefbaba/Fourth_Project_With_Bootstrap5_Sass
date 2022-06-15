@@ -21664,6 +21664,68 @@ body {
   margin-bottom: 2.5rem;
 }
 
+/* Start The Footer Section */
+.footer {
+  padding-top: rem(72px);
+}
+@media (min-width: 992px) {
+  .footer {
+    top: rem(56px);
+    bottom: rem(56px);
+  }
+}
+.footer .logo-media .description {
+  margin-bottom: rem(32px);
+  line-height: 1.8;
+}
+@media (min-width: 992px) {
+  .footer .logo-media .description {
+    line-height: 2;
+  }
+}
+.footer .logo-media .media {
+  margin-top: rem(40px);
+  margin-bottom: rem(40px);
+}
+@media (min-width: 992px) {
+  .footer .logo-media .media {
+    margin: 0;
+  }
+}
+.footer .logo-media .media li:not(:last-child) {
+  margin-right: rem(22px);
+}
+.footer .logo-media .media li a {
+  width: rem(32px);
+  height: rem(32px);
+  transition: all 0.15s ease-in-out;
+}
+.footer .logo-media .media li a:hover {
+  background-color: #0C61F7 !important;
+}
+.footer .links .title,
+.footer .about .title,
+.footer .our-office .title {
+  font-size: 1rem;
+}
+.footer .our-office {
+  margin-top: rem(40px);
+}
+.footer .our-office > div {
+  font-size: rem(14px);
+  line-height: 1.8;
+}
+.footer .our-office > div:last-child {
+  margin-top: rem(24px);
+  margin-bottom: rem(40px);
+}
+@media (min-width: 992px) {
+  .footer .copyright p {
+    margin-top: rem(52px);
+  }
+}
+
+/* End The Footer Section */
 .btn {
   border-radius: 2.6875rem;
   padding-left: 1.25rem !important;
@@ -22399,68 +22461,6 @@ body {
 }
 
 /* End The Contact Section */
-/* Start The Footer Section */
-.footer {
-  padding-top: 4.5rem;
-}
-@media (min-width: 992px) {
-  .footer {
-    top: 3.5rem;
-    bottom: 3.5rem;
-  }
-}
-.footer .logo-media .description {
-  margin-bottom: 2rem;
-  line-height: 1.8;
-}
-@media (min-width: 992px) {
-  .footer .logo-media .description {
-    line-height: 2;
-  }
-}
-.footer .logo-media .media {
-  margin-top: 2.5rem;
-  margin-bottom: 2.5rem;
-}
-@media (min-width: 992px) {
-  .footer .logo-media .media {
-    margin: 0;
-  }
-}
-.footer .logo-media .media li:not(:last-child) {
-  margin-right: 1.375rem;
-}
-.footer .logo-media .media li a {
-  width: 2rem;
-  height: 2rem;
-  transition: all 0.15s ease-in-out;
-}
-.footer .logo-media .media li a:hover {
-  background-color: #0C61F7 !important;
-}
-.footer .links .title,
-.footer .about .title,
-.footer .our-office .title {
-  font-size: 1rem;
-}
-.footer .our-office {
-  margin-top: 2.5rem;
-}
-.footer .our-office > div {
-  font-size: 0.875rem;
-  line-height: 1.8;
-}
-.footer .our-office > div:last-child {
-  margin-top: 1.5rem;
-  margin-bottom: 2.5rem;
-}
-@media (min-width: 992px) {
-  .footer .copyright p {
-    margin-top: 3.25rem;
-  }
-}
-
-/* End The Footer Section */
 /* 1. Configuration and  abstracts */
 /* 2. Vendors */
 /* 3. Base stuff */
