@@ -4,6 +4,7 @@
   &-indicators [data-bs-target] {
     width: 0.75rem;
     height: 0.75rem;
+    opacity: 1 !important;
 
     &.active {
       background: {

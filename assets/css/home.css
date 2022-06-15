@@ -21666,13 +21666,13 @@ body {
 
 .btn {
   border-radius: 2.6875rem;
-  padding-left: 2.1875rem !important;
-  padding-right: 2.1875rem !important;
+  padding-left: 1.25rem !important;
+  padding-right: 1.25rem !important;
 }
-@media (max-width: 991.98px) {
+@media (min-width: 992px) {
   .btn {
-    padding-left: 1.875rem !important;
-    padding-right: 1.875rem !important;
+    padding-left: 2.1875rem !important;
+    padding-right: 2.1875rem !important;
   }
 }
 
@@ -21726,6 +21726,7 @@ body {
 .carousel-indicators [data-bs-target] {
   width: 0.75rem;
   height: 0.75rem;
+  opacity: 1 !important;
 }
 .carousel-indicators [data-bs-target].active {
   background-color: #F7931A !important;

@@ -7,16 +7,16 @@
     radius: rem(43px);
   }
 
-  @include media-breakpoint-down(lg) {
-    padding: {
-      left: rem(30px) !important;
-      right: rem(30px) !important;
-    }
+  padding: {
+    left: rem(20px) !important;
+    right: rem(20px) !important;
   }
 
-  padding: {
-    left: rem(35px) !important;
-    right: rem(35px) !important;
+  @include media-breakpoint-up(lg) {
+    padding: {
+      left: rem(35px) !important;
+      right: rem(35px) !important;
+    }
   }
 }
 
